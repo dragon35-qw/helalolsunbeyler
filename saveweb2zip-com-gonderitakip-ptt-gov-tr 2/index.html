@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="PTT">
+    <meta name="author" content="PTT AS">
+    <title>Sorgula - PTT Gönderi Takip</title>
+    <link href="css/css.css" rel="stylesheet">
+
+
+    
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/pttstyle.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+
+</head>
+<body class="anasayfabackground">
+    <section class="main">
+
+        <div class="container">
+            <div class="row logoalani">
+                <div class="col-xs-12 col-md-8 col-lg-6 " style="padding:0px; margin:0px; text-align:left;">
+                    <a href="https:\\www.ptt.gov.tr" role="button"> <img class="img-fluid" src="images/pttlogo3.png"></a>
+                </div>
+                <div class="col-lg-4 col-xl-5 d-none d-lg-block">
+                    <img class="img-fluid" src="images/herzamanheryerde1.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="boscizgi d-block d-lg-none">
+                </div>
+            </div>
+            <div class="row">
+                <div style="border-radius:20px;" class="col-sm-12 col-md-10 col-lg-4 border border-warning border-4 maviarkaplan">
+                    <h2>GÖNDERİ TAKİBİ</h2>
+                    
+<form action="/Track/summaryResult" id="searchForm" method="post" onkeydown="return event.keyCode!=13">                        <div class="input-group mb-3">
+
+
+                            
+                            <input id="search-area" type="text" class="form-control rounded-left" maxlength="13" onkeypress="clsAlphaNoOnly(event)" placeholder="Takip Numaranızı Giriniz">
+                            <input id="q" name="q" type="hidden" value="">
+                            <div class="input-group-append">
+                                <button id="searchButton" class="btn btn-outline-secondary rounded-right" style="background-color:white; border:none; height:60px;" type="button"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+</form>                    <div class="row beyaztext" style=" color:red" id="warning-message"></div>
+                    <div class="row beyaztext">Uyarı: Bu sayfada görüntülenecek sonuçlar bilgi amaçlıdır.</div>
+                    <div class="row" style="text-align:center;margin:10px"> <a href="http://anket.ptt.gov.tr/anket_giris/anketdis2024.php" target="_blank"><img src="images/anket%20buttonu-01_.png" width="350" class="img-fluid"></a></div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer footerrenksari">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-2 d-none d-lg-block">
+                        <img src="images/footerlogo.jpeg" style="height:60px">
+                    </div>
+
+                    <div class="col-sm-14 col-md-10 col-lg-8">
+                        <a href="https://twitter.com/PTTKurumsal" target="_blank" style="padding: 7px; color: white; text-decoration:none"><i class="fa fa-twitter">/</i><span>PTTKurumsal</span></a>
+                        <a href="https://www.facebook.com/Ptt.Kurumsal" target="_blank" style="padding: 7px; color: white; text-decoration:none"><i class="fa fa-facebook">/</i><span>Ptt.Kurumsal</span></a>
+                        <a href="https://www.instagram.com/pttkurumsal" target="_blank" style="padding: 7px; color: white; text-decoration:none"><i class=" fa fa-instagram">/</i><span>pttkurumsal</span></a>
+                        <a href="https://www.ptt.gov.tr/" target="_blank" style="padding: 7px; color: white; text-decoration:none">www.ptt.gov.tr</a>
+
+                    </div>
+                    <div class="col-2 d-none d-md-block">
+                        <img src="images/444numara.jpg" style="height:60px">
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+    </section>
+
+
+
+    
+    <div class="toast-container position-absolute p-3 top-0 start-50 translate-middle-x">
+        <div id="liveToast" class="toast bg-warning" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Hata!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                <span id="error-message"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/codemirror.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body></html>
